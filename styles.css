@@ -1,0 +1,82 @@
+/* CSS RESET — Josh Comeau */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* VARIABLES */
+:root {
+  /* colors */
+  --clr-black: hsl(0, 0%, 8%);
+  --clr-green: hsl(153, 71%, 59%);
+  --clr-dark_gray: hsl(0, 0%, 14%);
+  --clr-light_gray: hsl(0, 0%, 85%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* font family */
+  --ff-headings: 'Space Grotesk', sans-serif;
+  --ff-body: 'Space Grotesk', sans-serif;
+
+  /* font sizes */
+  --fs-heading_xl: 88px;
+  --fs-heading_l: 49px;
+  --fs-heading_m: 24px;
+  --fs-paragraph: 18px;
+
+  /* font weights */
+  --fw-500: 500;
+  --fw-700: 700;
+}
+
+/* REUSABLE STYLES */
+
+/* containers */
+.container {
+  --max-width: 70rem;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+/* PAGE STYLES */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
