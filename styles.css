@@ -1,3 +1,32 @@
+/* FONTS */
+
+/* barlow-600 */
+@font-face {
+  font-display: swap;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/barlow-v12-latin-600.woff2') format('woff2');
+}
+
+/* fraunces-700 */
+@font-face {
+  font-display: swap;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/fraunces-v31-latin-700.woff2') format('woff2');
+}
+
+/* fraunces-900 */
+@font-face {
+  font-display: swap;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/fraunces-v31-latin-900.woff2') format('woff2');
+}
+
 /* CSS RESET — Josh Comeau */
 *,
 *::before,
@@ -43,25 +72,47 @@ h6 {
 /* VARIABLES */
 :root {
   /* colors */
-  --clr-black: hsl(0, 0%, 8%);
-  --clr-green: hsl(153, 71%, 59%);
-  --clr-dark_gray: hsl(0, 0%, 14%);
-  --clr-light_gray: hsl(0, 0%, 85%);
+  --clr-soft-red: hsl(7, 99%, 70%);
+  --clr-yellow: hsl(51, 100%, 49%);
+  --clr-cyan-167: hsl(167, 40%, 24%);
+  --clr-dark-blue: hsl(198, 62%, 26%);
+  --clr-cyan-168: hsl(168, 34%, 41%);
+  --clr-blue-212: hsl(212, 27%, 19%);
+  --clr-blue-213: hsl(213, 9%, 39%);
+  --clr-blue-232: hsl(232, 10%, 55%);
+  --clr-blue-210: hsl(210, 4%, 67%);
   --clr-white: hsl(0, 0%, 100%);
 
+  /* FONTS */
+
   /* font family */
-  --ff-headings: 'Space Grotesk', sans-serif;
-  --ff-body: 'Space Grotesk', sans-serif;
+  --ff-headings: 'Barlow', sans-serif;
+  --ff-body: 'Fraunces', sans-serif;
 
-  /* font sizes */
-  --fs-heading_xl: 88px;
-  --fs-heading_l: 49px;
-  --fs-heading_m: 24px;
-  --fs-paragraph: 18px;
+  /* font size */
 
-  /* font weights */
-  --fw-500: 500;
+  /* headings */
+  /* 56px -> 40px */
+  --heading-primary: clamp(
+    2.5rem,
+    1.989795918367347rem + 2.1768707482993195vw,
+    3.5rem
+  );
+
+  /* 42px - 32px */
+  --heading-secon: clamp(
+    2rem,
+    1.7448979591836735rem + 1.0884353741496597vw,
+    2.5rem
+  );
+
+  /* paragraphs */
+  /* 18px, 16px, 15px */
+
+  /* font weight */
+  --fw-600: 600;
   --fw-700: 700;
+  --fw-900: 900;
 }
 
 /* REUSABLE STYLES */
@@ -77,6 +128,9 @@ h6 {
 
 /* PAGE STYLES */
 body {
+  font-family: var(--ff-body);
+  font-size: 1.125rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-weight: var(--fw-600);
 }
