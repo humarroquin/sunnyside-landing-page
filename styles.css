@@ -157,7 +157,7 @@ body {
 /* hero */
 .hero {
   height: 800px;
-  background-image: url(/images/desktop/image-header.jpg);
+  background-image: url(./images/desktop/image-header.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
