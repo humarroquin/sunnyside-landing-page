@@ -24,7 +24,7 @@
   font-family: 'Fraunces';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/fraunces-v31-latin-900.woff2') format('woff2');
+  src: url('./fonts/fraunces-v31-latin-900.woff2') format('woff2');
 }
 
 /* CSS RESET — Josh Comeau */
