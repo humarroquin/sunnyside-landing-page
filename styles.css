@@ -6,7 +6,7 @@
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/barlow-v12-latin-600.woff2') format('woff2');
+  src: url('./fonts/barlow-v12-latin-600.woff2') format('woff2');
 }
 
 /* fraunces-700 */
@@ -15,7 +15,7 @@
   font-family: 'Fraunces';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/fraunces-v31-latin-700.woff2') format('woff2');
+  src: url('./fonts/fraunces-v31-latin-700.woff2') format('woff2');
 }
 
 /* fraunces-900 */
