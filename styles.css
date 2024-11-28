@@ -78,6 +78,7 @@ h6 {
   --clr-cyan-167: hsl(167, 40%, 24%);
   --clr-dark-blue: hsl(198, 62%, 26%);
   --clr-cyan-168: hsl(168, 34%, 41%);
+  --clr-cyan-70: hsl(168, 44%, 70%);
   --clr-blue-212: hsl(212, 27%, 19%);
   --clr-blue-213: hsl(213, 9%, 39%);
   --clr-blue-232: hsl(232, 10%, 55%);
@@ -331,4 +332,45 @@ body {
 .testimonials__user-job {
   font-size: 14px;
   color: var(--clr-blue-210);
+}
+
+/* imgages */
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* footer */
+.footer {
+  padding-block: 72px;
+  background-color: var(--clr-cyan-70);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-links,
+.social-icons {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links {
+  gap: 57px;
+}
+
+.social-icons {
+  gap: 28px;
+}
+
+.footer-links a,
+.social-icons a {
+  text-decoration: none;
+  color: var(--clr-cyan-167);
 }
