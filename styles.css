@@ -147,7 +147,6 @@ h6 {
   display: flex;
 }
 
-/* Todo: refactor the grids */
 .grid-2cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -156,6 +155,21 @@ h6 {
 .grid-3cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 595px) {
+  .grid-2cols {
+    grid-template-columns: 1fr;
+  }
+  .grid-3cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grid-3cols {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* PAGE STYLES */
@@ -173,7 +187,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  top: 3.125rem;
+  top: clamp(2rem, 1.9362rem + 0.2721vw, 2.125rem);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -278,8 +292,7 @@ body {
 
 /* hero */
 .hero {
-  /* todo: find a way to make the hero image responsive */
-  height: 800px;
+  min-height: clamp(33.625rem, 25.2704rem + 35.6463vw, 50rem);
   background-image: url(./images/desktop/image-header.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -313,6 +326,12 @@ body {
   justify-self: center;
   align-self: center;
   padding: 2rem;
+}
+
+@media screen and (max-width: 595px) {
+  .about__content {
+    text-align: center;
+  }
 }
 
 .about__image img {
@@ -353,9 +372,10 @@ body {
 }
 
 .grid-content {
-  width: 370px;
+  max-width: 370px;
   text-align: center;
   margin-bottom: 59px;
+  padding-inline: 1rem;
 }
 
 .services__graphic-design {
@@ -429,6 +449,12 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+@media screen and (max-width: 595px) {
+  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* footer */
 .footer {
   padding-block: 72px;
