@@ -511,15 +511,15 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 37.1875rem) {
   .images {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /* footer */
 .footer {
-  padding-block: 72px;
+  padding-block: 4.5rem;
   background-color: var(--clr-cyan-70);
 }
 
