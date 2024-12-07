@@ -83,6 +83,7 @@ h6 {
   --clr-cyan-70: hsl(168, 44%, 70%);
   --clr-blue-62: hsl(199, 87%, 62%);
   --clr-blue-26: hsl(198, 62%, 26%);
+  --clr-blue-27: hsl(199, 54%, 27%);
   --clr-blue-19: hsl(212, 27%, 19%);
   --clr-blue-39: hsl(213, 9%, 39%);
   --clr-blue-55: hsl(232, 10%, 55%);
@@ -346,6 +347,9 @@ body {
   .about__image--glass {
     grid-row: 3;
   }
+  .paragrpah-gray-txt {
+    margin-block: 1.5rem 2rem;
+  }
 }
 
 .about__image img {
@@ -392,17 +396,17 @@ body {
 }
 
 /* services */
-.grid-item {
-  height: 600px;
+.services__grid-item {
+  min-height: 37.5rem;
   display: grid;
   align-items: end;
   justify-content: center;
 }
 
-.grid-content {
-  max-width: 370px;
+.services__grid-content {
+  max-width: 24rem;
   text-align: center;
-  margin-bottom: 59px;
+  margin-bottom: 3.6875rem;
   padding-inline: 1rem;
 }
 
@@ -424,8 +428,21 @@ body {
   margin-bottom: 27px;
 }
 
-.services__txt {
-  color: var(--clr-cyan-167);
+.services__txt--graphic-design,
+.services__txt--photography {
+  font-size: 1rem;
+}
+
+.services__heading--graphic-design,
+.services__txt--graphic-design {
+  color: var(--clr-cyan);
+}
+
+.services__heading--photography {
+  color: var(--clr-blue-27);
+}
+.services__txt--photography {
+  color: var(--clr-blue-26);
 }
 
 /* reviews */
