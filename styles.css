@@ -88,6 +88,7 @@ h6 {
   --clr-blue-39: hsl(213, 9%, 39%);
   --clr-blue-55: hsl(232, 10%, 55%);
   --clr-blue-67: hsl(210, 4%, 67%);
+  --clr-black: hsl(0, 0%, 0%);
 
   /* font family */
   --ff-headings: 'Fraunces', sans-serif;
@@ -410,22 +411,23 @@ body {
   padding-inline: 1rem;
 }
 
-.services__graphic-design {
-  background-image: url(./images/desktop/image-graphic-design.jpg);
+.services__graphic-design,
+.services__photography {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.services__graphic-design {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
 }
 
 .services__photography {
   background-image: url(./images/desktop/image-photography.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .services__heading {
-  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
 }
 
 .services__txt--graphic-design,
@@ -445,47 +447,62 @@ body {
   color: var(--clr-blue-26);
 }
 
-/* reviews */
+/* testimonials */
 .testimonials {
-  padding-block: 160px;
+  padding-block: 10rem;
   text-align: center;
 }
 
 .testimonials__quotes {
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .testimonials__heading {
-  color: var(--clr-blue-210);
+  color: var(--clr-blue-67);
   text-transform: uppercase;
-  margin-bottom: 81px;
-}
-
-.testimonials__img {
-  border-radius: 50%;
-  height: 72px;
-  width: auto;
-  object-fit: cover;
-  margin-inline: auto;
-  margin-bottom: 58px;
+  margin-bottom: 5.0625rem;
 }
 
 .testimonials__txt {
-  color: var(--clr-blue-213);
-  margin-bottom: 69px;
+  color: var(--clr-blue-39);
+  margin-block: 3.625rem 4.3125rem;
+}
+
+@media screen and (max-width: 37.1875rem) {
+  .testimonials {
+    padding-block: 4rem 5.375rem;
+  }
+  .testimonials__quotes {
+    gap: 4rem;
+  }
+  .testimonials__heading {
+    margin-bottom: 4rem;
+  }
+  .testimonials__txt {
+    margin-block: 2rem;
+  }
+}
+
+.testimonials__img {
+  height: 4.5rem;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-inline: auto;
 }
 
 .testimonials__user {
   font-family: var(--ff-headings);
   font-weight: var(--fw-900);
-  color: hsl(0, 0%, 0%);
-  font-size: 18px;
-  margin-bottom: 9px;
+  color: var(--clr-black);
+  font-size: 1.125rem;
+  margin-bottom: 0.5625rem;
 }
 
 .testimonials__user-job {
-  font-size: 14px;
-  color: var(--clr-blue-210);
+  font-size: 0.875rem;
+  color: var(--clr-blue-67);
+  text-transform: capitalize;
 }
 
 /* imgages */
