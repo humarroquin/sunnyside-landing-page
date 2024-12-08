@@ -23,6 +23,24 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ### What I learned
 
+I learned about the window.matchMedia method and applied it to remove a class when the screen width is 661px or larger.
+
+```js
+const mediaQuery = window.matchMedia('(min-width: 661px)');
+
+function handleMediaQueryChange(e) {
+  if (e.matches) {
+    navbar.classList.remove('show-menu');
+  }
+}
+
+mediaQuery.addEventListener('change', handleMediaQueryChange);
+```
+
 ### Continued development
 
+Look for additional resources to practice and deepen my understanding of this window.matchMedia method.
+
 ### Useful resources
+
+- [Window: matchMedia() method](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) - This MDN documentation helped me better understand how the window.matchMedia method works.

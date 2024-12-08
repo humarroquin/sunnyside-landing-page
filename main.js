@@ -6,7 +6,7 @@ btn.addEventListener('click', () => {
   navbar.classList.toggle('show-menu');
 });
 
-// remove the class .show-menu when the screen size is 661px or bigger
+// remove the .show-menu class when the screen size is 661px or bigger
 const mediaQuery = window.matchMedia('(min-width: 661px)');
 
 function handleMediaQueryChange(e) {
